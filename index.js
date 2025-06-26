@@ -23,6 +23,12 @@ $(document).keypress(function (event) {
   }
 });
 
+$(document).click(function (event) {
+  if (gameActive ==false) {
+    startGame();
+  }
+});
+
 function arraysAreEqual(arr1, arr2) {
     if (arr1.length !== arr2.length) {
         return false;
